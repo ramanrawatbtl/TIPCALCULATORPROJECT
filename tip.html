@@ -1,0 +1,288 @@
+ <!DOCTYPE html> 
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="script.js">
+    </script>
+    <!-- <style>
+           .container {
+        
+             background-color:rgba(19, 22, 22, 0.922);
+            color: #fff;
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+          }.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        
+        .card {
+            
+            position:relative;
+            width: 20%;
+            height: 85%;
+            background-color: #1c299c43;
+            transition: all .3s ease-in-out;
+            box-shadow: 12px 30px 20px 10px rgba(black, .3);
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input {
+            display:block;
+            width:100%;
+            margin:10px -10px;
+            padding:10px;
+          }
+        select {
+            display:block;
+            width:105%;
+            margin:10px -10px;
+            padding:10px;
+        }
+        .type-2 {
+            background-color: #ffffffe0;
+            border:0;
+            box-shadow:0 0 7px rgba(166, 166, 166, 0.874);
+            transition: .3s box-shadow;
+          }
+        .type-2:hover {
+            box-shadow:0 0 4px rgba(210, 140, 140, 0.5);
+          }
+
+        button {
+            background-color: #ffffffe0;  
+            width: 20px;  
+            /* padding: 10px;
+            margin-top: 20px;*/
+            margin-left: 30%; 
+            cursor: pointer;
+            border: none;
+            box-shadow:0 0 7px rgba(231, 220, 220, 0.874);
+        }
+
+        button:hover{
+            background-color: rgb(62, 62, 62);
+            border: none;
+            box-shadow:0 0 4px rgba(43, 43, 43, 0.5);
+            color: bisque;
+        }
+
+        #tip{
+            font-size: larger;
+            text-align: center;
+        }
+        #people{
+            text-align: left;
+          width: 60px;
+         padding-left: 10%;
+        }
+
+         
+          
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+        <div class="card">
+        <h1>Tip Calculator</h1>
+
+        <hr>
+        <br>
+          <form>
+
+            Bill Amount    
+              <input name="name" class="glow-on-hover" id="billamt" type="text" placeholder="₹ Bill Amount" required autocomplete="off">
+      <br>
+
+                Rate the Service?
+                
+                    <select class="glow-on-hover" id="serviceQual">
+                  <option disabled selected value="0">-- Choose an Option --</option>
+                  <option value="0.3">30&#37; &#45; Outstanding</option>
+                  <option value="0.2">20&#37; &#45; Good</option>
+                  <option value="0.15">15&#37; &#45; It was OK</option>
+                  <option value="0.1">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+              </select>
+
+              
+      
+          </form>
+         
+         
+          number of peoples ?<input type="number" class="glow-on-hover"id="people" placeholder="Enter">
+          <div id="totalTip">
+           
+            <span id="tip">0.00</span>
+           </div>
+           <button id="calculate" class="glow-on-hover"type="submit">Calculate </button>
+         
+      
+       
+        </div>
+        
+
+      
+      </div>
+    </div>
+      
+      
+
+
+    <!-- <script>
+    
+function calculateTip() {
+    var billAmt = document.getElementById("billamt").value;
+    var serviceQual = document.getElementById("serviceQual").value;
+   var numspeople=document.getElementById("people").value;
+  
+    if (billAmt === "" || serviceQual == 0) {
+      alert("Please enter values");
+      return;
+    }
+    
+  
+  
+    var total = (billAmt * serviceQual)/numspeople;
+
+    total = Math.round(total * 100) / 100;
+   
+    total = total.toFixed(2);
+   
+    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("tip").innerHTML = "Calculated Tip : ₹" + total;
+  
+  }
+  
+  
+  document.getElementById("totalTip").style.display = "none";
+  
+  document.getElementById("calculate").onclick = function() {
+    calculateTip();
+  
+  };
+    </script> -->
+  </body>
+</html>
+

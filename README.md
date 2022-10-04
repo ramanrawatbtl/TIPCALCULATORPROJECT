@@ -6,7 +6,7 @@ made tip calculator to calculate tip amount based on service
 
 - 🌱 
 
-- 👨‍💻 website link is [https://tipcalculatorbyraman.netlify.app]
+- 👨‍💻 website link is [https://tipcalcproject2.netlify.app]
 
 
 

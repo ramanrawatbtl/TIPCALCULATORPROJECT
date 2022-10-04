@@ -15,7 +15,7 @@ made tip calculator to calculate tip amount based on service
 ## Screenshot
 
     
-   ![Logo](tip.png)
+   ![Logo](https://github.com/ramanrawatbtl/TIPCALCULATORPROJECT/blob/main/Annotation%202022-09-29%20041035.png)
    
 ## Deployment
 
